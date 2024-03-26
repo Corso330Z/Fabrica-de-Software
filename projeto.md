@@ -79,7 +79,28 @@ A especificação dos requisitos deste documento deve seguir as recomendações 
 ## Requisitos Funcionais
 
 A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com as colunas: identificador, nome, descrição e prioridade:
-
+| IDENTIFICADOR | NOME | DESCRIÇÃO |
+:---|:---|:---|
+|RF-001 |Cadastrar usuários | O sistema possibilitará o usuário criar uma conta, colocando suas informações principais. |
+|RF-002 | Editar perfil | O sistema possibilitará o usuário a configurar e modificar a sua conta de acordo com seu gosto, podendo por uma foto, uma descrição, ou escolher o tema do site. |
+|RF-003 | Cadastrar filmes  | O sistema possibilitará o operador ou o usuário cadastrar e adicionar novas opções de filmes para o site. |
+|RF-004 | Filtrar filmes adicionados | O sistema irá filtra os filmes adicionados enviando para os operadores, que verificam se a postagem pode ser efetuada ou não. |
+|RF-005 | Avaliar filmes | O sistema possibilitará o usuário avaliar os filmes disponíveis no sistema de estrelas. |
+|RF-006 | Adicionar comentários | O sistema possibilitará os usuários adicionarem comentários às postagens feitas por outros usuários. |
+|RF-007 | Remover comentários | O sistema possibilitará os usuários apagarem seus comentários e também possibilitará os operadores a deletar comentários permanentemente. |
+|RF-008 | Filtrar comentários | O sistema irá filtrar os comentários, bloqueando algumas palavras agressivas e abusivas. |
+|RF-009 | Burcar usuário | O sistema possibilitará a busca de usuários através do nome cadastrado ou pelo id. |
+|RF-0010 | Buscar filmes por nome | O sistema possibilitará a busca de filmes através do nome. |
+|RF-0011 | Burcar filmes por gênero | O sistema possibilitará a busca de filmes através de categorias, como: terror, romance. |
+|RF-0012 | Categorizar por gênero | O sistema ordenará os filmes por gêneros. |
+|RF-0013 | Apresentar informações gerais do filme | O sistema apresentá informações do filme, como: diretor, elenco, duração, síntase. |
+|RF-0014 | Adicionar aos favoritos | O sistema possibilitará que o usuário adicione os filmes a pasta favoritos. |
+|RF-0015 | Adicionar amigos | O sistema possibilitará que o usuário adicione amigos, para que possam compartilhar avaliações.|
+|RF-0016 | Trocar senha | O sistema possibilitará ao usuário trocar a senha, caso ocorra alguma complicação. |
+|RF-0017 | Avaliar comentários | O sistema possibilitará que os usuário avaliem os comentários através do sistema de likes. |
+|RF-0018 | Visualizar lançamentos | O sistema disponibilizará os lançamentos dos filmes para o usuário. |
+|RF-0019 | Anexar imagem | O sistema permitirá ao operador anexar imagens durante a cadastração de filmes. |
+|RF-0020 | Notificar | O sistema notificará as mudanças do site, como: filmes novos, comentários, avaliações. |
 
  
 

@@ -96,9 +96,9 @@ A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com 
 |RF-0013 | Remover comentários | O sistema possibilitará os usuários apagarem seus comentários e também possibilitará os operadores a deletar comentários permanentemente. |
 |RF-0014 | Alterar comentários | O sistema possibilitará que os usuário alterem seus comentários. |
 |RF-0015 | Visualizar comentário | O sistema possibilitará o usuário visualizar os comentários adicionados por ela mesma e por outros usuários. |
-|RF-0016 | Cadastrar filmes | O sistema possibilitará o usuário cadastrar novos filmes no sistema. |
-|RF-0017 | Deletar filmes | O sistema possibilitará o administrador deletar os filmes adicionados pelos usuários. |
-|RF-0018 | Alterar filmes | O sistema possibilitará o usuário alterar a escrita feita por ele cadastro de filmes. |
+|RF-0016 | Cadastrar filmes | O sistema possibilitará o administrador cadastrar novos filmes no sistema. |
+|RF-0017 | Deletar filmes | O sistema possibilitará o administrador deletar os filmes adicionados, caso necessário. |
+|RF-0018 | Alterar filmes | O sistema possibilitará o administrador alterar a escrita feita por ele cadastro de filmes. |
 |RF-0019 | Avaliar filmes | O sistema possibilitará o usuário avaliar os filmes disponíveis no sistema de estrelas. |
 |RF-0020 | Buscar filmes | O sistema possibilitará o usuário buscar filmes pelo nome e visualizar suas informações. |
 |RF-0021 | Cadastrar gênero | O sistema possibilitará o administrador cadastrar novos gêneros cinemáticos. |

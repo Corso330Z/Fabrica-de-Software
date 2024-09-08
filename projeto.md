@@ -81,39 +81,46 @@ A especificação dos requisitos deste documento deve seguir as recomendações 
 A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com as colunas: identificador, nome, descrição e prioridade:
 | IDENTIFICADOR | NOME | DESCRIÇÃO |
 :---|:---|:---|
-|RF-001 |Cadastrar usuários | O sistema possibilitará o usuário criar uma conta, colocando suas informações principais. |
-|RF-002 |Sair da conta | O sistema possibilitará o usuário sair de sua conta em um dispositivo. |
-|RF-003 |Deletar usuários | O sistema possibilitará o usuário deletar sua conta e seus dados cadastrados anteriormente. |
+|RF-001 | Cadastrar usuários | O sistema possibilitará o usuário criar uma conta, colocando suas informações principais. |
+|RF-002 | Sair da conta | O sistema possibilitará o usuário sair de sua conta em um dispositivo. |
+|RF-003 | Deletar usuários | O sistema possibilitará o usuário deletar sua conta e seus dados cadastrados anteriormente. |
 |RF-004 | Editar usuário | O sistema possibilitará o usuário a configurar e modificar a sua conta de acordo com seu gosto, podendo por uma foto, uma descrição, ou escolher o tema do site. |
-|RF-005 | Visualizar usuário | O sistema possibilitará a busca e a vizualização de usuários através do nome cadastrado ou pelo id. |
+|RF-005 | Visualizar usuário | O sistema possibilitará o usuário a acessar sua conta ou acessar a conta de outros usuários. |
 |RF-006 | Restringir idade | O sistema irá restringir as ações e os conteúdos disponíveis ao usuário de acordo com a idade cadastrada, não permitindo algumas ações para menores de 18 anos.  |
 |RF-007 | Adicionar amigo | O sistema possibilitará o usuário a adicionar amigos por meio dos nomes de usuário. |
-|RF-008 | Restringir palavras  | O sistema irá restringir palavras de baixo calão que podem ser utilizados para ofender alguém ou algum grupo étnico. |
-|RF-009 | logar usuário | O sistema possibilitará os usuários executarem o login através do nome cadastrado e de sua senha. |
+|RF-008 | Restringir palavras  | O sistema irá restringir palavras de baixo calão que podem ser utilizadas para ofender alguém ou algum grupo étnico. |
+|RF-009 | Logar usuário | O sistema possibilitará os usuários executarem o login através do nome cadastrado e de sua senha. |
 |RF-0010 | Trocar senha | O sistema possibilitará ao usuário trocar a senha, caso ocorra alguma complicação. |
 |RF-0011 | Avaliar comentários | O sistema possibilitará que os usuário avaliem os comentários através do sistema de likes. |
 |RF-0012 | Adicionar comentários | O sistema possibilitará os usuários adicionarem comentários às postagens feitas por outros usuários. |
 |RF-0013 | Remover comentários | O sistema possibilitará os usuários apagarem seus comentários e também possibilitará os operadores a deletar comentários permanentemente. |
 |RF-0014 | Alterar comentários | O sistema possibilitará que os usuário alterem seus comentários. |
-|RF-0015 | Visualizar comentário | O sistema possibilitará o usuário visualizar os comentários adicionados por ela mesma e por outros usuários. |
+|RF-0015 | Visualizar comentário | O sistema possibilitará o usuário acessar uma tela onde estará os seus comentários, ou, dependendo do botão clicado,  os comentários de seus amigos. |
 |RF-0016 | Cadastrar filmes | O sistema possibilitará o administrador cadastrar novos filmes no sistema. |
 |RF-0017 | Deletar filmes | O sistema possibilitará o administrador deletar os filmes adicionados, caso necessário. |
 |RF-0018 | Alterar filmes | O sistema possibilitará o administrador alterar a escrita feita por ele cadastro de filmes. |
 |RF-0019 | Avaliar filmes | O sistema possibilitará o usuário avaliar os filmes disponíveis no sistema de estrelas. |
-|RF-0020 | Buscar filmes | O sistema possibilitará o usuário buscar filmes pelo nome e visualizar suas informações. |
+|RF-0020 | Buscar filmes | O sistema possibilitará o usuário buscar filmes pelo nome. |
 |RF-0021 | Cadastrar gênero | O sistema possibilitará o administrador cadastrar novos gêneros cinemáticos. |
 |RF-0022 | Deletar filmes | O sistema possibilitará o administrador deletar os gêneros já adicionados. |
-|RF-0023 | Consultar gênero | O sistema possibilitará o usuário visualizar os filmes relacionados a determinado gênero. |
+|RF-0023 | Buscar gênero | O sistema possibilitará o usuário buscar filmes relacionados a determinado gênero e visualizar suas informações. |
 |RF-0024 | Alterar gênero | O sistema possibilitará o administrador alterar as informações ou os filmes relacionados aos gêneros já adicionados. |
 |RF-0024 | Adicionar favorito | O sistema possibilitará o usuário a adicionar filmes, gêneros e atores aos favoritos. |
 |RF-0025 | Cadastrar ator | O sistema possibilitará o administrador cadastrar novos atores. |
 |RF-0026 | Deletar ator | O sistema possibilitará o administrador deletar atores já adicionados. |
-|RF-0027 | Consultar ator | O sistema possibilitará o usuário visualizar os filmes relacionados a determinado ator. |
-|RF-0028 | Alterar gênero | O sistema possibilitará o administrador alterar as informações ou os filmes relacionados aos atores já adicionados. |
-|RF-0029 | Visualizar lançamentos | O sistema disponibilizará os lançamentos dos filmes para o usuário. |
+|RF-0027 | Consultar ator | O sistema possibilitará ao usuário visualizar os filmes feitos por determinado ator e visualizar suas informações. |
+|RF-0028 | Alterar ator | O sistema possibilitará o administrador alterar as informações ou os filmes relacionados aos atores já adicionados. |
+|RF-0029 | Visualizar telas | O sistema disponibilizará o usuário acessar as outras telas após o clique. |
 |RF-0030 | Anexar imagem | O sistema permitirá ao operador anexar imagens durante a cadastração de filmes. |
 |RF-0031 | Notificar | O sistema notificará as mudanças do site, como: filmes novos, comentários, avaliações. |
- 
+|RF-0032 | Buscar usuário | O sistema possibilitará o usuário a buscar outros. |
+|RF-0033 | Buscar ator | O sistema possibilitará ao usuário buscar atores. |
+|RF-0034 | Consultar filme | O sistema possibilitará ao usuário visualizar suas informações. |
+|RF-0035 | Consultar favoritos | O sistema possibilitará ao usuário visualizar seus filmes e atores favoritos. |
+|RF-0036 | Remover favoritos | O sistema possibilitará ao usuário remover dos favoritos. |
+|RF-0037 | Voltar | O sistema possibilitará ao usuário voltar para a tela anterior. |
+|RF-0038 | Remover amigo | O sistema possibilitará ao usuário remover uma pessoa de suas amizades. |
+
 
 ## Requisitos Não Funcionais
 A tabela a seguir contém a relação com os Requisitos Não Funcionais identificados, contendo identificador, nome, descrição e prioridade:

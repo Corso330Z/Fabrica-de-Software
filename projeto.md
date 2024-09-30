@@ -120,6 +120,10 @@ A tabela a seguir contém a relação dos Requisitos Funcionais elicitados, com 
 |RF-0036 | Remover favoritos | O sistema possibilitará ao usuário remover dos favoritos. |
 |RF-0037 | Voltar | O sistema possibilitará ao usuário voltar para a tela anterior. |
 |RF-0038 | Remover amigo | O sistema possibilitará ao usuário remover uma pessoa de suas amizades. |
+|RF-0039 | Adicionar sugestão | O sistema possibilitará ao usuário adicionar sugestões de filmes ou atores para os desenvolvedores. |
+|RF-0040 | Remover sugestão |  O sistema possibilitará ao usuário remover suas sugestões, ou aos desenvolvedores a excluírem. |
+|RF-0041 | Visualizar sugestão | O sistema possibilitará ao usuário visualizar suas sugestões e ao desenvolvedor ver as sugestões feitas. |
+|RF-0042 | Modificar sugestão | O sistema possibilitará ao usuário modificar suas sugestões e ao admin modificar e depois adicionar. |
 
 
 ## Requisitos Não Funcionais

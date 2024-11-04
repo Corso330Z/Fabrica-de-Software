@@ -80,7 +80,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     right: 0;
-    align-self: self-end;
+    align-self: flex-end;
 }
 
 .secoes div {

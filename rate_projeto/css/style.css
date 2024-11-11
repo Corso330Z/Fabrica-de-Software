@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #474747;
+}
+
+/* Barra lateral */
+.lateral_bar {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 5%;
+    min-height: 40vh;
+    background-color: #52057b;
+}
+
+.nav_botoes_lateral {
+    height: 80vh;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+    gap: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes_acima {
+    height: 50vh;
+    display: flex;
+    gap: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes {
+    justify-self: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+}
+
+.ultimo_botao {
+    height: 10vh;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+/* Cabeçalho */
+.header{
+    width: 100%;
+    height: 8vh;
+    min-height: 4vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 0;
+}
+
+.cor1{
+    background-color: #52057b;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rate {
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    color: aliceblue;
+    font-size: 28px;
+    margin-left: 7%;
+}
+
+.movie  {
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-left: 12%;
+}        
+
+.cinzacl{
+    background-color: #737373;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    /* position: fixed; */
+}
+
+.cinzaes{
+    background-color: #545454;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#lupa{
+    width: 80%;
+    margin-left: 6%;
+    margin-right: 14%;
+    font-size: 28px;
+}
+
+
+.preto{
+    background-color: #000000;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.botoes_perfil {
+    width: 80%;
+    height: 7vh;
+    margin-left: 12%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.botoes_perfil img {
+    height: 40px;
+    width: 40px;
+}
+
+/* .bloco{
+    background-color: #737373;
+    margin-bottom: 0;
+    height: 15%;
+    width: 15%;
+    min-height: 30%
+  
+
+} */
+
+
+/* Blocos */
+.blocos_filmes {
+    padding-top: 122px;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5vh ;
+}
+
+.card_blocos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5vh;
+}
+
+.blocos {
+    background-color: #737373;
+    /* width: 9vw;
+    height: 28vh; */
+    height: 240px;
+    width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.card_login {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;   
+    margin-right: 4%;                                                                                                                                                                                                                                                                     
+}
+
+#btn_login {
+    background-color: #52057b;
+    height: 35px;
+    width: 70px;
+    padding: 4px;
+    border-radius: 7px ;
+    color: rgb(253, 253, 253);
+    font-size: 17px; 
+}
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .rate {
+        font-size: 26px;
+    }.movie {
+        font-size: 10px;
+    }
+    #lupa {
+        font-size: 26px;
+    }
+    .botoes_perfil img {
+        height: 37px;
+        width: 37px;
+    }
+    .botoes {
+    width: 42px;
+    height: 42px;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .rate{
+        font-size: 26px;
+    }
+    .movie {
+        font-size: 10px;
+    }
+    #lupa {
+        font-size: 22px;
+    }
+    .botoes_perfil img {
+        height: 34px;
+        width: 34px;
+    }
+    .botoes {
+        width: 39px;
+        height: 39px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .rate {
+        font-size: 25px;
+    }
+    .movie {
+        font-size: 9px;
+    }
+    #lupa {
+        font-size: 22px;
+    }
+    .botoes_perfil img {
+        height: 31px;
+        width: 31px;
+    }
+    .botoes {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .rate {
+        font-size: 22px;
+    }
+    .movie {
+        font-size: 8px;
+    }
+    #lupa {
+        font-size: 20px;
+    }
+    .botoes_perfil img {
+        height: 29px;
+        width: 29px;
+    }
+    .botoes {
+        width: 33px;
+        height: 33px;
+    }
+}

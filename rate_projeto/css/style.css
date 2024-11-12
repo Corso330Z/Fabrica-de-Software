@@ -12,24 +12,28 @@ body {
 .lateral_bar {
     position: fixed;
     top: 0;
-    height: 100vh;
+    height: 100%;
     width: 5%;
-    min-height: 40vh;
+    min-height: 40%;
     background-color: #52057b;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 }
 
 .nav_botoes_lateral {
-    height: 80vh;
+    height: 80%;
     width: 100%;
-    padding-top: 15vh;
-    padding-bottom: 5vh;
-    gap: 20vh;
+    padding-top: 20%;
+    gap: 40%;
     display: flex;
+    justify-self: center;
+    align-self: center;
     flex-direction: column;
 }
 
 .botoes_acima {
-    height: 50vh;
+    height: 50%;
     display: flex;
     gap: 2%;
     flex-direction: column;
@@ -40,18 +44,14 @@ body {
 .botoes {
     justify-self: center;
     align-items: center;
-    width: 45px;
-    height: 45px;
+    width: 32px;
+    height: 32px;
 }
 
 .ultimo_botao {
-    height: 10vh;
     justify-self: center;
     align-self: center;
 }
-
-
-
 
 /* Cabeçalho */
 .header{
@@ -140,6 +140,11 @@ body {
     align-items: center;
 }
 
+.botoes_perfil button {
+    background-color: #000000;
+    border: 0;
+}
+
 .botoes_perfil img {
     height: 40px;
     width: 40px;
@@ -173,7 +178,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 5vh;
 }
 
@@ -201,8 +206,46 @@ body {
     border-radius: 7px ;
     color: rgb(253, 253, 253);
     font-size: 17px; 
+    border: 0;
 }
 
+/* Estilo do botão de menu */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #52057b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu-btn i {
+    font-size: 20px;
+}
+
+/* Estilo do botão de menu */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #52057b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu-btn i {
+    font-size: 20px;
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -219,8 +262,8 @@ body {
         width: 37px;
     }
     .botoes {
-    width: 42px;
-    height: 42px;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -240,8 +283,8 @@ body {
         width: 34px;
     }
     .botoes {
-        width: 39px;
-        height: 39px;
+        width: 24px;
+        height: 24px;
     }
 }
 
@@ -261,13 +304,36 @@ body {
         width: 31px;
     }
     .botoes {
-        width: 36px;
-        height: 36px;
+        width: 18px;
+        height: 18px;
     }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
+    .rate { 
+        font-size: 22px;
+    }
+    .movie {
+        font-size: 8px;
+    }
+    #lupa {
+        font-size: 20px;
+    }
+    .botoes_perfil img {
+        height: 29px;
+        width: 29px;
+    }
+    .botoes {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .lateral_bar {
+        display: block;
+    }
     .rate {
         font-size: 22px;
     }
@@ -282,7 +348,7 @@ body {
         width: 29px;
     }
     .botoes {
-        width: 33px;
-        height: 33px;
+        width: 25px;
+        height: 25px;
     }
 }

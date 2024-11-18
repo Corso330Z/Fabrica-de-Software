@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Filme</title>
+    <link rel="stylesheet" href="css/add_filme.css">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/montserrat">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img src="img/seta.png" alt="seta" class="img">
+    <div class="container">
+        <h2>ADICIONAR FILME</h2>
+        <div class="form-container">
+            <img src="img/marvel.jpeg" alt="Ator" class="ator-image">
+            <form id="atorForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+
+                <label for="sinopse">Sinópse:</label>
+                <input type="text" id="sinópse" name="sinópse" placeholder="Digite a sinópse" required>
+
+                <label for="data de lançamento">Data de lançamento:</label>
+                <input type="date" id="data de lançamento" name="data de lançamento" placeholder="Digite a data de lançamento" required>
+
+                <label for="diretor">Diretor:</label>
+                <input type="text" id="diretor" name="diretor" placeholder="Digite o nome" required>
+
+                <label for="produtor">Produtor:</label>
+                <input type="text" id="produtor" name="produtor" placeholder="Digite o nome" required>
+
+                <label for="elenco">Elenco:</label>
+                <input type="text" id="elenco" name="elenco" placeholder="Digite o nome" required>
+
+                <label for="gênero">Gênero:</label>
+                <input type="text" id="gênero" name="gênero" placeholder="Digite o gênero" required>
+                
+                <div class="img_classificacao">
+                    <button type="button" class="buto"><img src="img/AL.jpg" alt="indicação livre" class="ícone1"></button>
+                    <button type="button" class="buto"><img src="img/A10.jpg" alt="indicação acima de 10 anos" class="ícone2"></button>
+                    <button type="button" class="buto"><img src="img/A12.jpg" alt="indicação acima de 12 anos" class="ícone3"></button>
+                    <button type="button" class="buto"><img src="img/A14.png" alt="indicação acima de 14 anos" class="ícone4"></button>
+                    <button type="button" class="buto"><img src="img/A16.png" alt="indicação acima de 16 anos" class="ícone5"></button>
+                    <button type="button" class="buto"><img src="img/A18.png" alt="indicação acima de 18 anos" class="ícone6"></button>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="cancel">Cancelar</button>
+                    <button type="submit" id="add">Adicionar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

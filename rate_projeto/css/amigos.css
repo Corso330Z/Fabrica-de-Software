@@ -177,21 +177,13 @@ body {
     gap: 5vh ;
 }
 
-.info_fav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
-}
-
-.favs {
+.amigos_tit {
     color: #FFF;
     font-family: "Montserrat", sans-serif;
-    font-size: 20px;
 }
 
-.favs h1 {
-    font-size: 20px;
+.h1_amigos {
+    font-size: 18px;
 }
 
 .card_blocos{
@@ -204,37 +196,70 @@ body {
 }
 
 .blocos {
-    background-color: #737373;
+    background-color: #A8A8A8;
     /* width: 9vw;
     height: 28vh; */
-    height: 240px;
-    width: 160px;
+    height: 150px;
+    width: 300px;
+    border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-}
-
-.card_remover {
-    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 4%;                                                                                                                                                                                                                                                                     
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#btn_remover {
-    background-color: #B60B0D;
+.perfil {
+    height: 80px;
     width: 80px;
-    padding: 10px;
-    border-radius: 7px ;
-    color: rgb(253, 253, 253);
-    text-align: center;
-    font-size: 15px; 
-    border: 0;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    cursor: pointer;
 }
 
-#btn_remover:hover {
-    background-color: #df1013;
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+p {
+    color: #000;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.div_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.vizu_amg {
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: #737373;
+    color: #FFF;
+}
+
+.vizu_amg:hover {
+    background-color: #808080;
+}
+
+.rem_amg {
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: #737373;
+    color: #FFF;
+}
+
+.rem_amg:hover {
+    background-color: #808080;
 }
 
 /* Estilo do botão de menu */

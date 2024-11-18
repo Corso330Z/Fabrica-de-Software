@@ -189,9 +189,18 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+.tit_film h1 {
+    font-size: 20px;
+}
+
 .tit_ator {
+    margin-top: 5vh;
     color: #FFF;
     font-family: "Montserrat", sans-serif;
+}
+
+.tit_ator h1 {
+    font-size: 20px;
 }
 
 .card_blocos{

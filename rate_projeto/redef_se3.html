@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir senha</title>
+    <link rel="stylesheet" href="css/redef_sen.css">
+</head>
+<body>
+    <div class="corpo">
+        <div class="logo">
+            <h1 class="Rate">RATE</h1>
+            <h2 class="Review">MOVIEW REVIEW</h2>
+        </div>
+        <div class="form-container3">
+            <h2 class="titulo_form">REDEFINIR SENHA</h2>
+            <form id="reset-form">
+                <label for="new-password">Nova senha:</label>
+                <div class="input-container">
+                    <input type="password" id="new-password" name="new-password" placeholder="Digite a nova senha" required>
+                    <div class="mostrar">
+                        <button type="button" class="show-password" id="toggle-new-password">👁️</button>
+                    </div>
+                </div>
+                <div class="requirements" id="requirements">
+                    <p id="length-requirement">- Mínimo de 8 caracteres</p>
+                    <p id="uppercase-requirement">- Pelo menos uma letra maiúscula</p>
+                    <p id="special-requirement">- Pelo menos um caractere especial (!@#$%^&*)</p>
+                </div>
+    
+                <label for="confirm-password">Confirmar senha:</label>
+                <div class="input-container">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme a nova senha" required>
+                    <div class="mostrar">
+                        <button type="button" class="show-password" id="toggle-confirm-password">👁️</button>
+                    </div>
+                </div>
+
+                <button type="submit" id="submit-button" disabled>Redefinir</button>
+            </form>
+    
+            <!-- Bloco de confirmação -->
+            <div class="success-message" id="success-message">
+                <p>Senha redefinida com sucesso!</p>
+                <button id="login-button">Fazer Login</button>
+            </div>
+        </div>
+        <div class="faixa"></div>
+    </div>
+
+    <script>
+        const newPassword = document.getElementById('new-password');
+        const confirmPassword = document.getElementById('confirm-password');
+        const toggleNewPassword = document.getElementById('toggle-new-password');
+        const toggleConfirmPassword = document.getElementById('toggle-confirm-password');
+        const submitButton = document.getElementById('submit-button');
+        const successMessage = document.getElementById('success-message');
+        const loginButton = document.getElementById('login-button');
+        const lengthRequirement = document.getElementById('length-requirement');
+        const uppercaseRequirement = document.getElementById('uppercase-requirement');
+        const specialRequirement = document.getElementById('special-requirement');
+
+        // Função para validar a senha
+        function validatePassword() {
+            const password = newPassword.value;
+            let isValid = true;
+
+            // Verifica o comprimento
+            lengthRequirement.style.color = password.length >= 8 ? '#66ff66' : '#ff6666';
+            isValid &= password.length >= 8;
+
+            // Verifica letra maiúscula
+            uppercaseRequirement.style.color = /[A-Z]/.test(password) ? '#66ff66' : '#ff6666';
+            isValid &= /[A-Z]/.test(password);
+
+            // Verifica caractere especial
+            specialRequirement.style.color = /[!@#$%^&*]/.test(password) ? '#66ff66' : '#ff6666';
+            isValid &= /[!@#$%^&*]/.test(password);
+
+            // Habilita o botão somente se a senha for válida e as senhas coincidirem
+            submitButton.disabled = !(isValid && password === confirmPassword.value);
+        }
+
+        // Alternar visibilidade da senha
+        function togglePasswordVisibility(input, toggleButton) {
+            const type = input.type === 'password' ? 'text' : 'password';
+            input.type = type;
+            toggleButton.textContent = type === 'password' ? '👁️' : '🙈';
+        }
+
+        toggleNewPassword.addEventListener('click', () => togglePasswordVisibility(newPassword, toggleNewPassword));
+        toggleConfirmPassword.addEventListener('click', () => togglePasswordVisibility(confirmPassword, toggleConfirmPassword));
+        newPassword.addEventListener('input', validatePassword);
+        confirmPassword.addEventListener('input', validatePassword);
+
+        // Exibir mensagem de sucesso
+        document.getElementById('reset-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            successMessage.style.display = 'block';
+        });
+
+        // Redirecionar para a página de login
+        loginButton.addEventListener('click', () => {
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +9,8 @@
 body {
     background-color: #474747;
 }
+
+
 
 /* Barra lateral */
 .lateral_bar {
@@ -173,6 +177,23 @@ body {
     gap: 5vh ;
 }
 
+.info_inicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.tit_film {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+}
+
+.tit_ator {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+}
+
 .card_blocos{
     width: 100%;
     display: flex;
@@ -207,6 +228,13 @@ body {
     color: rgb(253, 253, 253);
     font-size: 17px; 
     border: 0;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+#btn_login:hover {
+    background-color: #7e198f;
 }
 
 /* Estilo do botão de menu */

@@ -167,7 +167,7 @@ body {
 
 /* Blocos */
 .blocos_filmes {
-    padding-top: 150px;
+    padding-top: 122px;
     padding-left: 10%;
     padding-right: 5%;
     padding-bottom: 3%;
@@ -219,6 +219,31 @@ body {
     height: 240px;
     width: 160px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.card_login {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;   
+    margin-right: 4%;                                                                                                                                                                                                                                                                     
+}
+
+#btn_login {
+    background-color: #52057b;
+    height: 35px;
+    width: 70px;
+    padding: 4px;
+    border-radius: 7px ;
+    color: rgb(253, 253, 253);
+    font-size: 17px; 
+    border: 0;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+#btn_login:hover {
+    background-color: #7e198f;
 }
 
 /* Estilo do botão de menu */

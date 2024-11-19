@@ -1,0 +1,15 @@
+#btn_login {
+    background-color: #52057b;
+    height: 38px;
+    width: 100px;
+    padding: 4px;
+    border-radius: 7px ;
+    color: rgb(253, 253, 253);
+    font-size: 17px; 
+    border: 0;
+}
+.titleF{
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}

@@ -1,0 +1,171 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-color: #52057B; 
+    color: #D9D9D9; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #52057B;
+    border-radius: 10px;
+    padding: 50px;
+    width: 90%; 
+    max-width: 800px; 
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.top-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.top-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.profile-picture img {
+    background-color: #6C6060; 
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    padding-left: 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; 
+}
+
+.input-text {
+    background-color: #ccc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; 
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box; 
+}
+
+.edit-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: -30px; 
+}
+
+.back-button,
+.cont-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.back-button {
+    background-color: #6C6060; 
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #4D4D4D;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.cont-button {
+    background-color: #737373;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.cont-button:hover {
+    background-color: #595959;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-container {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .input-wrapper {
+        max-width: 100%; 
+    }
+}

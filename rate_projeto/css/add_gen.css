@@ -15,13 +15,45 @@ body {
     margin: 0;
 }
 
+.cards {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.seta_voltar{
+    width: 100%;
+    height: 10%;
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.back-button:hover {
+    color: #ccc;
+}
+
 .container {
     background-color: #3f3e3e;
     padding: 20px;
     border-radius: 15px;
-    width: 350px;
+    width: 20%;
+    height: 60%;
+    margin-top: 6.5%;
+    margin-bottom: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
     text-align: center;
-    position: fixed;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
 }

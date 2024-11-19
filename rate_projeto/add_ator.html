@@ -12,26 +12,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <img src="img/seta.png" alt="seta" class="img">
-    <div class="container">
-        <h2>ADICIONAR ATOR</h2>
-        <div class="form-container">
-            <img src="img/ator.webp" alt="Ator" class="ator-image">
-            <form id="atorForm">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
 
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" name="idade" placeholder="Digite a idade" required>
-
-                <label for="nascimento">Nascimento:</label>
-                <input type="date" id="nascimento" name="nascimento" required>
-
-                <div class="button-group">
-                    <button type="button" id="cancel">Cancelar</button>
-                    <button type="submit" id="add">Adicionar</button>
-                </div>
-            </form>
+    <div class="cards">
+        <div class="botoes">
+                <div class="seta_voltar"><button class="back-button" onclick="goBack()">&#8592;</button></div>
+            </div>
+        <div class="container">
+            <h2>ADICIONAR ATOR</h2>
+            <div class="form-container">
+                <img src="img/ator.webp" alt="Ator" class="ator-image">
+                <form id="atorForm">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" placeholder="Digite a idade" required>
+                    <label for="nascimento">Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                    <div class="button-group">
+                        <button type="button" id="cancel">Cancelar</button>
+                        <button type="submit" id="add">Adicionar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 

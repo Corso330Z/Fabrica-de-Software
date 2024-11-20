@@ -7,26 +7,20 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #2C2C2C;
-    width: 100vw;
-    height: 100%;
     color: white;
-    display: flex;
-    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 .cards {
     margin-top: 0;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.seta_voltar{
-    width: 100%;
-    height: 10%;
-}
 
 .back-button {
     background-color: transparent;
@@ -43,15 +37,14 @@ body {
 }
 
 .container {
-    height: 100%;
+    height: max-content;
     width: 35%;
     background-color: #3f3e3e;
     padding: 20px;
     border-radius: 15px;
-    margin-top: 5%; 
-    margin-bottom: 5%;
-    margin-left: 28%;
-    margin-right: 35%;
+    margin-bottom: 40px;
+    margin-left: 32.5%;
+    margin-right: 32.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,4 +208,12 @@ button#cancel {
     flex-wrap: wrap;
     gap: 20px;
     margin: 5%;
+}
+
+.form-container input[type="text"] {
+    outline: 0;
+}
+
+.form-container input[type="date"] {
+    outline: 0;
 }

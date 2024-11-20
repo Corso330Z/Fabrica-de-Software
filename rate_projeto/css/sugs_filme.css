@@ -7,28 +7,20 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #2C2C2C;
-    width: 100%;
-    height: 100%;
     color: white;
-    display: flex;
-    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 .cards {
     margin-top: 0;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.seta_voltar{
-    width: 100%;
-    height: 10%;
-    padding-left: 3%;
-    padding-top: 1%;
-}
 
 .back-button {
     background-color: transparent;
@@ -36,7 +28,8 @@ body {
     color: #fff;
     font-size: 35px;
     cursor: pointer;
-    
+    margin-left: 3%;
+    margin-top: 1%;
 }
 
 .back-button:hover {
@@ -44,15 +37,14 @@ body {
 }
 
 .container {
-    height: 100%;
-    width: 30%;
+    height: max-content;
+    width: 35%;
     background-color: #3f3e3e;
     padding: 20px;
     border-radius: 15px;
-    margin-top: 2%; 
-    margin-bottom: 2%;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-bottom: 40px;
+    margin-left: 32.5%;
+    margin-right: 32.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,12 +100,12 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #6200ea;
+    background-color: #52057B;
     color: white;
 }
 
 button#cancel {
-    background-color: #6200ea;
+    background-color: #52057B;
 }
 
 .img_classificacao{
@@ -191,7 +183,6 @@ button#cancel {
 
 .buto{
     background-color: #3f3e3e;
- 
 }
 
 #add{
@@ -200,6 +191,14 @@ button#cancel {
 
 #cancel{
     padding: 3%;
+}
+
+#cancel:hover {
+    background-color: #7e198f;
+}
+
+#add:hover {
+    background-color: #7e198f;
 }
 
 .button-group {
@@ -211,3 +210,10 @@ button#cancel {
     margin: 5%;
 }
 
+.form-container input[type="text"] {
+    outline: 0;
+}
+
+.form-container input[type="date"] {
+    outline: 0;
+}

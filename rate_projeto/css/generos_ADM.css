@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@253&family=Nerko+One&family=Protest+Guerrilla&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +9,8 @@
 body {
     background-color: #474747;
 }
+
+
 
 /* Barra lateral */
 .lateral_bar {
@@ -162,7 +166,7 @@ body {
 
 
 /* Blocos */
-.blocos_filmes {
+.blocos_gen {
     padding-top: 122px;
     padding-left: 10%;
     padding-right: 5%;
@@ -170,150 +174,67 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 3vh ;
+    gap: 5vh ;
 }
 
-.seta_voltar {
-    width: 50%;
-    margin-top: -2%;
-    margin-left: -2%;
+.info_gen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
 }
 
-.back-button {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
+.generos {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
 }
 
-.back-button:hover {
-    color: #ccc;
+.generos h1 {
+    font-size: 20px;
 }
 
-.movie-details {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+.card_blocos{
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    color: white;
-}
-
-.parte1{
-    width: 27.5%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
-    gap: 30px;
+    gap: 5vh;
 }
 
-.parte2{
-    width: 27.5%;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.parte3{
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: end;
-}
-
-.movie-name {
-    margin-left: 5px;
-    font-size: 28px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.poster-frame {
-    width: 20vw;
-    height: 60vh;
-    background-color: #5c5c5c;
-    border-radius: 10px;
+.blocos {
+    background-color: #737373;
+    /* width: 9vw;
+    height: 28vh; */
+    height: 240px;
+    width: 160px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
-.nam{
-    padding-bottom: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.livre {
-    margin-top: 20px;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.user-card {
+.card_adc {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: #A8A8A8; 
-    padding: 15px ;
+    justify-content: flex-end;
+    margin-right: 4%;                                                                                                                                                                                                                                                                     
+}
+
+#btn_adc {
+    background-color: #52057B;
     width: max-content;
-    border-radius: 25px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.profile-icon {
-    width: 50px;
-    height: 50px;
-    background-color: #52057b; 
-    color: white; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%; 
-    font-size: 20px;
-    margin-right: 10px; 
-}
-
-.username {
-    font-size: 16px;
+    padding: 12px;
+    border-radius: 0px ;
+    color: rgb(253, 253, 253);
+    text-align: center;
+    font-size: 15px; 
+    border: 0;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    color: black; 
-}
-
-.perfil {
-    width: 25px;
-    height: 25px;
-}
-
-.avaliacao {
-    display: flex; 
-    gap: 10px; 
-    margin-left:18% ;
-    margin-top: -10px; 
-} 
-
-button {
-    font-size: 35px;
-    color: white;
-    background-color: #474747;
     cursor: pointer;
 }
 
-.likes {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25;
+#btn_adc:hover {
+    background-color: #7e198f;
 }
 
 /* Estilo do botão de menu */
@@ -459,4 +380,3 @@ button {
         height: 25px;
     }
 }
-

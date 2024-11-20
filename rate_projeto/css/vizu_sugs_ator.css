@@ -162,7 +162,7 @@ body {
 
 
 /* Blocos */
-.blocos_filmes {
+.blocos_atores {
     padding-top: 122px;
     padding-left: 10%;
     padding-right: 5%;
@@ -170,58 +170,143 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 5vh ;
+    gap: 3vh ;
 }
 
-.card_blocos{
-    width: 100%;
+.seta_voltar {
+    width: 50%;
+    margin-top: -2%;
+    margin-left: -2%;
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: #ccc;
+}
+
+.actor-details {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 5vh;
+    justify-content: space-between;
+    color: white;
 }
 
-.blocos {
-    background-color: #737373;
-    /* width: 9vw;
-    height: 28vh; */
-    height: 240px;
-    width: 160px;
+.parte1{
+    width: 27.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.parte2{
+    width: 27.5%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.parte3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.actor-name {
+    margin-left: 5px;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.poster-frame {
+    width: 20vw;
+    height: 60vh;
+    background-color: #5c5c5c;
+    border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
-.card_login {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;   
-    margin-right: 4%;                                                                                                                                                                                                                                                                     
+.nam{
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-#btn_login {
-    background-color: #B60B0D;
-    height: 38px;
-    width: 100px;
-    padding: 4px;
-    border-radius: 7px ;
-    color: rgb(253, 253, 253);
-    font-size: 17px; 
-    border: 0;
+.user-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A8A8A8; 
+    padding: 15px ;
+    width: max-content;
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
-.titleF{
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #52057b; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
     font-size: 20px;
-    color: white;
-    font-family: sans-serif;
+    margin-right: 10px; 
 }
-.titleA{
-    font-size: 20px;
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+    color: black; 
+}
+
+.perfil {
+    width: 25px;
+    height: 25px;
+}
+
+.avaliacao {
+    display: flex; 
+    gap: 10px; 
+    margin-left:18% ;
+    margin-top: -10px; 
+} 
+
+button {
+    font-size: 35px;
     color: white;
-    font-family: sans-serif;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    text-align: left; 
-    padding-left: 10px;
-   
+    background-color: #474747;
+    cursor: pointer;
+}
+
+.likes {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25;
 }
 
 /* Estilo do botão de menu */
@@ -368,204 +453,3 @@ body {
     }
 }
 
-/* Configurações básicas */
-.movie-details {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    
-    color: white;
-    border-radius: 10px;
-}
-.mod{
-    margin-top: 50px;
-    margin-left: 55%;
-    width: 20%;
-    height: 35px;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: #737373;
-}
-.rev{
-    margin-top: 50px;
-    margin-left: 20px;
-    width: 20%;
-    height: 35px;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: #B60B0D;
-}
-
-.movie-info {
-    width: 50%;
-}
-
-.movie-title {
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
-    margin-top: 25%;
-}
-
-
-
-.rating-star {
-    font-size: 20px;
-    color: gold;
-    margin-right: 5px;
-}
-
-.rating-value {
-    font-size: 18px;
-    color: white;
-}
-
-.movie-poster {
-    margin-bottom: 20px;
-    
-}
-
-.poster-frame {
-    width: 260px;
-    height: 390px;
- 
-    background-color: #737373;
-    margin-bottom: 10px;
-    margin-top: -7%;
-}
-
-.movie-data {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 29px;
-    color: white; 
-    margin-left: 300px; 
-    margin-top: -350px; 
-   
-   
-}
-#nam{
-    padding-bottom: 15px;
-}
-
-
-#set{
-    font-size: 38px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: -14%;
-    margin-left: -13%;
-    margin-bottom: 20px;
-}
-button {
-    font-size: 35px;
-    background-color: #474747;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
-}
-
-
-.avaliacao {
-    display: flex; 
-    gap: 10px; 
-    margin-left:170% ;
-    margin-top: -10px; 
-  
-} 
-.user-card {
-    display: flex;
-    align-items: center;
-    background-color: #A8A8A8; 
-    padding: 15px ;
-    width: 35%;
-    margin-left: 170%;
-    border-radius: 25px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
-    font-family: Arial, sans-serif;
-}
-
-.profile-icon {
-    width: 50px;
-    height: 50px;
-    background-color: #52057b; 
-    color: white; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%; 
-    font-size: 20px;
-    margin-right: 10px; 
-}
-
-.username {
-    font-size: 16px;
-    font-weight: bold;
-    color: black; 
-}
-
-.comments-section {
-    width: 40%;
-    margin-top: 8%;
-}
-.env  {
-    background-color: #52057b; 
-    color: white;
-    border: none; 
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block; 
-    font-size: 16px; 
-    margin: 4px 2px; 
-    cursor: pointer; 
-    border-radius: 25px; 
-   
-    
-  }
-  
-
-.comments-section h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    font-family: Arial, Helvetica, sans-serif;  
-    font-size: 22px;
-}
-
-.comment {
-    border-radius: 15px;       
-    padding: 10px;            
-    margin-bottom: 15px;      
-    background-color: #545454; 
-    width: 85%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
-}
-#adcCom{
-    width: 85%;
-    height: 45px;
-    border-radius: 15px;  
-    color: #fff; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-}
-
-
-.likes-count {
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-.like-icon {
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.add-comment input {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4a4a4a;
-    color: white;
-    margin-top: 10px;
-}

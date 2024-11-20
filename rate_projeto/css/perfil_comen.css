@@ -10,7 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     background-color: #52057B; 
-    color: #D9D9D9; 
+    color: #D9D9D9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,6 @@ body {
     position: relative;
 }
 
-
 @media (max-width: 800px) {
     .container {
         width: 95%; 
@@ -42,22 +41,17 @@ body {
 
     .left-container,
     .right-container {
-        width: 100%;
+        width: 100%; 
     }
 
     .profile-picture img {
-        width: 120px; 
-        height: 120px; 
+        width: 200px; 
+        height: 200px; 
     }
 
     .input-text {
         width: 100%; 
         margin-right: 0; 
-    }
-
-    .back-button, .comment-button {
-        width: 100%; 
-        margin-top: 10px; 
     }
 }
 
@@ -83,7 +77,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 40%;
-
 }
 
 .profile-picture img {
@@ -98,7 +91,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 60%;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .info-container {
@@ -139,20 +132,16 @@ body {
     cursor: pointer;
 }
 
-.back-button,
-.comment-button {
+.back-button {
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
+    background-color: #6C6060; 
     color: #fff;
     cursor: pointer;
+    align-self: flex-end; 
     margin-top: 20px;
     transition: all 0.3s ease-in-out;
-}
-
-.back-button {
-    background-color: #6C6060;
-    align-self: flex-end;
 }
 
 .back-button:hover {
@@ -161,13 +150,10 @@ body {
     transform: scale(1.05);
 }
 
-.comment-button {
-    background-color: #737373;
-    align-self: flex-start;
+.top-icons {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.comment-button:hover {
-    background-color: #595959;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+.back-button {
+    background-color: #6C6060;
 }

@@ -65,11 +65,12 @@ body {
     margin-top: -10px;
 }
 
+
 .form-container {
     background-color: #474747;
     padding: 30px;
     border-radius: 30px;
-    height: 45vh;
+    height: max-content;
     width: 25%;
     margin-left: 37.5%;
     margin-right: 37.5%;
@@ -83,6 +84,7 @@ body {
 .form-container h2 {
     color: #fff;
     letter-spacing: 2px;
+    margin-bottom: 25px;
 }
 
 .form-container label {
@@ -118,6 +120,8 @@ body {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .form-principal {
@@ -161,7 +165,7 @@ body {
     padding: 20px;
     border-radius: 30px;
     text-align: center;
-    height: 45vh;
+    height: max-content;
     width: 25%;
     margin-left: 37.5%;
     margin-right: 37.5%;
@@ -263,7 +267,7 @@ body {
 
 .form-container3 {
     width: 20%;
-    height: 50%;
+    height: max-content;
     margin-left: 40%;
     margin-right: 40%;
     background-color: #474747;

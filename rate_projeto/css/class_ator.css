@@ -10,8 +10,6 @@ body {
     background-color: #474747;
 }
 
-
-
 /* Barra lateral */
 .lateral_bar {
     position: fixed;
@@ -163,30 +161,34 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 3vh ;
+    width: 100%;
 }
 
 .botoes {
-    position: relative;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;   
-    margin-right: 4%;                                                                                                                                                                                                                                                                     
+    justify-content: flex-start;                                                                                                                                                                                                                                                                   
 }
 
 .seta_voltar {
     position: fixed;
-    width: 50%;
+    width: 10%;
     margin-left: -3%;
     margin-top: -3%;
+    align-items: center;
 }
 
 .estrela {
     position: fixed;
     right: 0;
-    width: 68%;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
 }
 
 .back-button {
@@ -206,18 +208,23 @@ body {
     border-radius: 7px ;
     color: rgb(253, 253, 253);
     border: none;
-    font-size: 40px;
+    font-size: 30px;
     color: #ffd700;
     cursor: pointer;
-    margin-right: 3vw;
 }
 
 .favorite-star:hover {
     color: #ffea00;
 }
 
+span {
+    color: #FFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
 .info {
-    margin-top: 5vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -226,6 +233,7 @@ body {
 .actor-info {
     position: fixed;
     width: 30%;
+    margin-top: 15px;
     margin-right: 5%;
     display: flex;
     flex-direction: column;
@@ -247,16 +255,15 @@ body {
 }
 
 .actor-image {
-    width: 15vw;
-    height: 45vh;
+    width: 14vw;
+    height: 40vh;
     background-color: #5c5c5c;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
-
 }
 
 .movies-section {
-    margin-top: -6%;
+    margin-top: -30px;
     width: 65%;
     margin-left: 35%;
     display: flex;
@@ -288,85 +295,165 @@ body {
     box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
-/* Seção de detalhes do ator
-.actor-details {
-    margin-left: 5%; Compensar a barra lateral 
-    padding: 20px;
+/* Estilo do botão de menu */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #52057b;
     color: #fff;
-    background-color: #474747;
-    min-height: calc(100vh - 8vh); Altura menos o cabeçalho 
-    display: flex;
-    flex-direction: column;
-    gap: 20px;z
-    position: relative;
-}
-
-Botão de voltar 
-.back-button {
-    background-color: transparent;
     border: none;
-    color: #fff;
-    font-size: 24px;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
     cursor: pointer;
 }
 
-.back-button:hover {
-    color: #ccc;
-}
-
-Informações do ator 
-.actor-info {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.actor-image {
-    width: 150px;
-    height: 200px;
-    background-color: #5c5c5c;
-    border-radius: 10px;
-}
-
-.actor-text h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.actor-text p {
-    margin: 5px 0;
-}
-
-Seção de filmes
-.movies-section h2 {
-    margin-bottom: 10px;
+.menu-btn i {
     font-size: 20px;
 }
 
-.movie-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
-
-.movies {
-    background-color: #5c5c5c;
-    width: 100%;
-    padding-top: 100%; Para manter o formato quadrado 
-    position: relative;
+/* Estilo do botão de menu */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #52057b;
+    color: #fff;
+    border: none;
     border-radius: 5px;
-}
-
-Estrela de favoritos
-.favorite-star {
-    font-size: 30px;
-    color: #ffd700;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    padding: 10px;
+    z-index: 1000;
     cursor: pointer;
 }
 
-.favorite-star:hover {
-    color: #ffea00;
-} */
+.menu-btn i {
+    font-size: 20px;
+}
+
+/* Estilo do botão de menu */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #52057b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu-btn i {
+    font-size: 20px;
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .rate {
+        font-size: 26px;
+    }.movie {
+        font-size: 10px;
+    }
+    #lupa {
+        font-size: 26px;
+    }
+    .botoes_perfil img {
+        height: 37px;
+        width: 37px;
+    }
+    .botoes {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .rate{
+        font-size: 26px;
+    }
+    .movie {
+        font-size: 10px;
+    }
+    #lupa {
+        font-size: 22px;
+    }
+    .botoes_perfil img {
+        height: 34px;
+        width: 34px;
+    }
+    .botoes {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .rate {
+        font-size: 25px;
+    }
+    .movie {
+        font-size: 9px;
+    }
+    #lupa {
+        font-size: 22px;
+    }
+    .botoes_perfil img {
+        height: 31px;
+        width: 31px;
+    }
+    .botoes {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .rate { 
+        font-size: 22px;
+    }
+    .movie {
+        font-size: 8px;
+    }
+    #lupa {
+        font-size: 20px;
+    }
+    .botoes_perfil img {
+        height: 29px;
+        width: 29px;
+    }
+    .botoes {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .lateral_bar {
+        display: block;
+    }
+    .rate {
+        font-size: 22px;
+    }
+    .movie {
+        font-size: 8px;
+    }
+    #lupa {
+        font-size: 20px;
+    }
+    .botoes_perfil img {
+        height: 29px;
+        width: 29px;
+    }
+    .botoes {
+        width: 25px;
+        height: 25px;
+    }
+}

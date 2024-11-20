@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RATE - Homepage</title>
+    <title>RATE - Vizualizar sugestão de filme</title>
     <link rel="stylesheet" href="css/vizu_sugs_filme.css">
     <!-- Ícone do Box Icon -->
     <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
@@ -38,7 +38,7 @@
                     <button>
                         <img id="tres" src="img/amigos.png" alt="Png de três usuários">
                     </button>
-                    <button>
+                    <button class="img_classificacao">
                         <img  id="perfil" src="https://img.icons8.com/?size=100&id=85147&format=png&color=737373" alt="Png de um perfil">
                     </button>
                 </div>
@@ -49,44 +49,45 @@
     
     <main>
 
+        
         <section class="blocos_filmes">
-            
-            
-            <!-- Nova Seção Adicionada -->
+            <div class="seta_voltar">
+                <button class="back-button" onclick="goBack()">&#8592;</button>
+            </div>
             <div class="movie-details">
-                <div class="movie-info">
-                    <h2 id="set">←</h2>
-                    <h1 class="movie-title">Nome do filme</h1>
+                <div class="part1">
+                    <h1 class="movie-name">Nome do filme </h1>
+                    <div class="movie-image">
+                        <div class="poster-frame"></div>
+                    </div>
+                </div>
+                <div class="parte2">
+                    <p class="nam">Diretor:</p>
+                    <p class="nam">Sinopse:</p>
+                    <p class="nam">Produtor: </p>
+                    <p class="nam">Elenco:</p>
+                    <p class="nam">Gênero:</p>
+                    <p class="nam">Data de Lançamento:</p>
+                    <div class="movie-rating-badge">
+                        <img class="livre" src="img/AL.jpg" alt="Indicação livre">
+                    </div>
+                </div>
+                <div class="parte3">
                     <div class="user-card">
-                        <div class="profile-icon"> 
-                            <span>👤</span>
+                        <div class="profile-icon">
+                            <img class="perfil" src="img/Perfil.png" alt="Imagem do ícone de usuário">
                         </div>
                         <span class="username">@fulanotany</span>
                     </div>
-                  
-                    <div class="movie-poster">
-                        <div class="poster-frame"></div>
-                    </div>
-                    <div class="movie-data">
-                         </p>
-                         <p><strong>Diretor:</strong> </p>
-                        <p><strong>Sinopse:</strong> </p>
-                        <p><strong>Produtor:</strong> </p>
-                        <p><strong>Elenco:</strong> </p>
-                        <p><strong>Gênero:</strong> </p>
-                        <p><strong>Data de Lançamento:</strong>
-                    </div>
                     <div class="avaliacao">
-                       <button class="ok"> 👍🏻</button>
-                        <button class="nok"> 👎🏻</button>
-                    </div>
-                    <div class="movie-rating-badge">
-                        <span class="icon"><img src="img/AL.jpg" alt="Classificação livre"></span>
+                        <button class="ok"> <span class="likes">0 </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M4 21h1V8H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2zM20 8h-7l1.122-3.368A2 2 0 0 0 12.225 2H12L7 7.438V21h11l3.912-8.596L22 12v-2a2 2 0 0 0-2-2z"></path></svg> </button>
+                        <button class="nok"> <span class="likes">0 </span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: msFilter"><path d="M20 3h-1v13h1a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM4 16h7l-1.122 3.368A2 2 0 0 0 11.775 22H12l5-5.438V3H6l-3.937 8.649-.063.293V14a2 2 0 0 0 2 2z"></path></svg> </button>
                     </div>
                 </div>
-               
+                   
+            </div>
+            
         </section>
-        
         
 
     <!-- Criar a barra lateral -->

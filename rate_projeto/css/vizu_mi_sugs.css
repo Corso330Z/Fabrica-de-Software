@@ -162,7 +162,7 @@ body {
 
 
 /* Blocos */
-.blocos_filmes {
+.blocos_atores {
     padding-top: 122px;
     padding-left: 10%;
     padding-right: 5%;
@@ -191,7 +191,7 @@ body {
     color: #ccc;
 }
 
-.movie-details {
+.actor-details {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -230,7 +230,7 @@ body {
     align-items: end;
 }
 
-.movie-name {
+.actor-name {
     margin-left: 5px;
     font-size: 28px;
     font-family: 'Montserrat', sans-serif;
@@ -253,12 +253,47 @@ body {
     font-size: 18px;
 }
 
-.livre {
+.mod_remov_button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1vh;
     margin-top: 20px;
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border-radius: 10px;
+}
+
+.remove_button {
+    width: max-content;
+    background-color: #B60B0D;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.remove_button:hover {
+    background-color: #df1013;
+}
+
+.mod_button {
+    width: max-content;
+    background-color: #737373;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.mod_button:hover {
+    background-color: #959595;
 }
 
 .user-card {
@@ -271,6 +306,7 @@ body {
     border-radius: 25px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .profile-icon {

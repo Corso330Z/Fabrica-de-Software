@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #474747;
+}
+
+/* Barra lateral */
+.lateral_bar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 5%;
+    min-height: 40%;
+    background-color: #52057b;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav_botoes_lateral {
+    height: 80%;
+    width: 100%;
+    padding-top: 20%;
+    gap: 40%;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.botoes_acima {
+    height: 50%;
+    display: flex;
+    gap: 2%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes {
+    justify-self: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+}
+
+.ultimo_botao {
+    justify-self: center;
+    align-self: center;
+}
+
+/* Cabeçalho */
+.header{
+    width: 100%;
+    height: 8vh;
+    min-height: 4vh;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 0;
+}
+
+.cor1{
+    background-color: #52057b;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.rate {
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    color: aliceblue;
+    font-size: 28px;
+    margin-left: 7%;
+}
+
+.movie  {
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-left: 12%;
+}        
+
+.cinzacl{
+    background-color: #737373;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    /* position: fixed; */
+}
+
+.cinzaes{
+    background-color: #545454;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#lupa{
+    width: 80%;
+    margin-left: 6%;
+    margin-right: 14%;
+    font-size: 28px;
+}
+
+
+.preto{
+    background-color: #000000;
+    height: 7vh;
+    min-height: 70px;
+    width: 23.75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.botoes_perfil {
+    width: 80%;
+    height: 7vh;
+    margin-left: 12%;
+    margin-right: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.botoes_perfil button {
+    background-color: #000000;
+    border: 0;
+}
+
+.botoes_perfil img {
+    height: 40px;
+    width: 40px;
+}
+
+/* .bloco{
+    background-color: #737373;
+    margin-bottom: 0;
+    height: 15%;
+    width: 15%;
+    min-height: 30%
+  
+
+} */
+
+
+/* Blocos */
+.blocos_atores {
+    padding-top: 122px;
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 3vh ;
+}
+
+.seta_voltar {
+    width: 50%;
+    margin-top: -2%;
+    margin-left: -2%;
+}
+
+.back-button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: #ccc;
+}
+
+.actor-details {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.parte1{
+    width: 27.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+
+.parte2{
+    width: 27.5%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.parte3{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.actor-name {
+    margin-left: 5px;
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.poster-frame {
+    width: 20vw;
+    height: 60vh;
+    background-color: #5c5c5c;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.nam{
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.adc_remov_button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1vh;
+    margin-top: 20px;
+}
+
+.remove_button {
+    width: max-content;
+    background-color: #B60B0D;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    color: #FFF;
+}
+
+.remove_button:hover {
+    background-color: #df1013;
+}
+
+.adc_button {
+    width: max-content;
+    background-color: #52057B;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.adc_button:hover {
+    background-color: #7e198f
+}
+
+.user-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #A8A8A8; 
+    padding: 15px ;
+    width: max-content;
+    border-radius: 25px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.profile-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #52057b; 
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    font-size: 20px;
+    margin-right: 10px; 
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+    color: black; 
+}
+
+.perfil {
+    width: 25px;
+    height: 25px;
+}
+
+.avaliacao {
+    display: flex; 
+    gap: 10px; 
+    margin-left:18% ;
+    margin-top: -10px; 
+} 
+
+button {
+    font-size: 35px;
+    color: white;
+    background-color: #474747;
+    cursor: pointer;
+}
+
+.likes {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25;
+}
+
+/* Estilo do botão de menu */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #52057b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu-btn i {
+    font-size: 20px;
+}
+
+/* Estilo do botão de menu */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #52057b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.menu-btn i {
+    font-size: 20px;
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .rate {
+        font-size: 26px;
+    }.movie {
+        font-size: 10px;
+    }
+    #lupa {
+        font-size: 26px;
+    }
+    .botoes_perfil img {
+        height: 37px;
+        width: 37px;
+    }
+    .botoes {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .rate{
+        font-size: 26px;
+    }
+    .movie {
+        font-size: 10px;
+    }
+    #lupa {
+        font-size: 22px;
+    }
+    .botoes_perfil img {
+        height: 34px;
+        width: 34px;
+    }
+    .botoes {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .rate {
+        font-size: 25px;
+    }
+    .movie {
+        font-size: 9px;
+    }
+    #lupa {
+        font-size: 22px;
+    }
+    .botoes_perfil img {
+        height: 31px;
+        width: 31px;
+    }
+    .botoes {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .rate { 
+        font-size: 22px;
+    }
+    .movie {
+        font-size: 8px;
+    }
+    #lupa {
+        font-size: 20px;
+    }
+    .botoes_perfil img {
+        height: 29px;
+        width: 29px;
+    }
+    .botoes {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 405px) {
+    .lateral_bar {
+        display: block;
+    }
+    .rate {
+        font-size: 22px;
+    }
+    .movie {
+        font-size: 8px;
+    }
+    #lupa {
+        font-size: 20px;
+    }
+    .botoes_perfil img {
+        height: 29px;
+        width: 29px;
+    }
+    .botoes {
+        width: 25px;
+        height: 25px;
+    }
+}
+
